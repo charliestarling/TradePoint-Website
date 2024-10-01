@@ -1,5 +1,5 @@
 <?php 
-
+$pageTitle = "Cover Page";
 include 'header.php';
 ?>
 
