@@ -1,62 +1,99 @@
+/* Desktop Styles for Registration Form */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+    background-color: #FFEAA7; /* Warm Sand Background */
     margin: 0;
     padding: 0;
-}
-
-.container {
-    max-width: 400px;
-    margin: 50px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    text-align: center;
     color: #333;
 }
 
+/* Container for the Form */
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+/* Heading Style */
+h1 {
+    text-align: center;
+    color: #74B9FF; /* Soft Blue for headings */
+    font-size: 28px;
+}
+
+/* Form Styles */
 form {
     display: flex;
     flex-direction: column;
 }
 
-label {
-    margin-bottom: 5px;
-    color: #555;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-    padding: 10px;
+input[type="text"], input[type="email"], input[type="password"] {
+    padding: 12px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 16px;
+    background-color: #FFEAA7; /* Light Yellow input background */
     width: 100%;
 }
 
-button {
-    padding: 10px;
-    background-color: #007BFF;
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+    outline: none;
+    border-color: #74B9FF; /* Soft Blue focus on input fields */
+}
+
+input[type="submit"] {
+    padding: 12px;
+    background-color: #55EFC4; /* Light Mint Button */
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 18px;
+}
+
+input[type="submit"]:hover {
+    background-color: #48D5A3; /* Darker Mint on hover */
+}
+
+/* Styled Confirmation Message */
+#confirm_message {
     font-size: 16px;
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    display: none;
 }
 
-button:hover {
-    background-color: #0056b3;
+#confirm_message.match {
+    color: white;
+    background-color: #55EFC4; /* Light Mint for success */
+    display: block;
 }
 
-.error {
-    color: red;
-    font-size: 14px;
-    margin-top: -10px;
+#confirm_message.no-match {
+    color: white;
+    background-color: #FF7675; /* Peachy Pink for error */
+    display: block;
+}
+
+/* Error Message Styles */
+.error_message {
+    color: #FF7675; /* Peachy Pink for error messages */
+    font-size: 16px;
     margin-bottom: 10px;
+}
+
+/* Link Styles */
+p a {
+    color: #74B9FF; /* Soft Blue for links */
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
 }
