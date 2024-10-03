@@ -1,6 +1,7 @@
 <?php 
+include '/includes/header.php';
+
 $pageTitle = "Cover Page";
-include 'header.php';
 ?>
 
 <!DOCTYPE html>
