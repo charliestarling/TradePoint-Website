@@ -2,12 +2,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../styles/desktop.css" type="text/css" rel="stylesheet">
-
-  <!-- <script defer src="js/script.js"></script> -->
-  <title><?php echo isset($pageTitle) ? $pageTitle:"Trade Point";?></title>
-  <?php 
-    require "";
-  ?>
-
+  <title><?php echo $title; ?></title>  
+  <?php require ("config.php");?>
 
 </head>

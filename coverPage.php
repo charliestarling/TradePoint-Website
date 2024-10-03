@@ -1,7 +1,6 @@
 <?php 
-include '/includes/header.php';
-
-$pageTitle = "Cover Page";
+$title = "TradePoint :: Home";
+require('includes/header.php');
 ?>
 
 <!DOCTYPE html>
