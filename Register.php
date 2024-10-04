@@ -18,9 +18,8 @@ require('includes/header.php');
       $email_address= $_POST["email"];
       $password= $_POST["password"];
       $errors = array();
-      
       $passwordHash = password_hash($password, PASSWORD_DEFAULT);
-      $sql_check_email= "SELECT * FROM users WHERE email_address = '$email_address'";
+      $sql_check_email= "SELECT * FROM accounts WHERE email_address = '$email_address'";
       $email_result= mysqli_query($conn, $sql_check_email);
       $email_row_count= mysqli_num_rows($email_result);
       if ($email_row_count>0){
