@@ -1,4 +1,5 @@
-<?php 
-$title = "TradePoint :: Logout";
-require('includes/header.php');
+<?php
+session_start();
+session_destroy();
+header("Location: Login.php");
 ?>
