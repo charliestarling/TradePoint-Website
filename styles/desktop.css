@@ -1,10 +1,11 @@
 /* Desktop Styles for Registration Form */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #FFEAA7; /* Warm Sand Background */
     margin: 0;
     padding: 0;
     color: #333;
+    height: 100vh;
+    background: linear-gradient(to bottom, #78866B 30%, #FAF8F3 30%);
 }
 
 /* Container for the Form */
@@ -21,7 +22,7 @@ body {
 /* Heading Style */
 h1 {
     text-align: center;
-    color: #74B9FF; /* Soft Blue for headings */
+    color: #3B3A36; /* Soft Blue for headings */
     font-size: 28px;
 }
 
@@ -37,7 +38,7 @@ input[type="text"], input[type="email"], input[type="password"] {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
-    background-color: #FFEAA7; /* Light Yellow input background */
+    background-color: #FAF8F3; /* Light Yellow input background */
     width: 100%;
 }
 
@@ -48,7 +49,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
 input[type="submit"] {
     padding: 12px;
-    background-color: #55EFC4; /* Light Mint Button */
+    background-color: #C8B9A6; /* Light Mint Button */
     color: white;
     border: none;
     border-radius: 5px;
@@ -57,7 +58,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #48D5A3; /* Darker Mint on hover */
+    background-color: #78866B; /* Darker Mint on hover */
 }
 
 /* Styled Confirmation Message */
@@ -71,7 +72,7 @@ input[type="submit"]:hover {
 
 #confirm_message.match {
     color: white;
-    background-color: #55EFC4; /* Light Mint for success */
+    background-color: #919F84; /* Light Mint for success */
     display: block;
 }
 
