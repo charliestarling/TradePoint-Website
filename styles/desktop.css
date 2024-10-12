@@ -98,3 +98,20 @@ p a {
 p a:hover {
     text-decoration: underline;
 }
+
+/* Topical Heading */
+.topic-heading h1{
+    margin-top: 40px;
+    font-size:50px;
+    color: #FAF8F3;
+    text-shadow: 2px 2px 0 #3B3A36, 2px 2px 0 #3B3A36, 2px 2px 0 #3B3A36, 2px 2px 0 #3B3A36;
+}  
+.topic-heading h4{
+    text-align: center;
+    margin-top: -25px;
+    font-size:20px;
+    color: #FAF8F3;
+    text-shadow: 2px 2px 0 #3B3A36, 2px 2px 0 #3B3A36, 2px 2px 0 #3B3A36, 2px 2px 0 #3B3A36;
+    
+    
+}
