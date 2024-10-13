@@ -1,23 +1,26 @@
 <?php 
 session_start();
-if (!isset($_SESSION["account_id"])){
+if (!isset($_SESSION["account_id"])) {
   header("Location: CoverPage.php");
+  exit(); // Use exit() after header redirects
 }
 $title = "TradePoint :: Home";
-require_once('includes/header-system.php');
+require('includes/header-system.php');
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<div class="topic-heading">
-  <h1><?php echo $_SESSION['user_first_name']?>'s Dashboard</h1>
-</div>
-<?php require_once('includes/nav-system.php');?>
+  <!-- Include your head elements here -->
 </head>
-
 <body>
+  <div class="topic-heading">
+    <h1>
+      <?php echo isset($_SESSION['user_first_name']) ? htmlspecialchars($_SESSION['user_first_name']) : 'User'; ?>'s Dashboard
+    </h1>
+  </div>
+  <?php require_once('includes/nav-system.php');?>
+
   <a href="Logout.php">Sign Out</a>
 </body>
 </html>

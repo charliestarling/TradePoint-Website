@@ -22,7 +22,6 @@ require('includes/header.php');
         $user = mysqli_fetch_array($email_result, MYSQLI_ASSOC);
         if($user){
           if(password_verify($password, $user["password"])){
-            session_start();
             $_SESSION['account_id']=$user['account_id'];
             $_SESSION['user_first_name']= $user['first_name'];
             $_SESSION['user_surname']=$user['surname'];
