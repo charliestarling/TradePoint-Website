@@ -26,7 +26,7 @@ require('includes/header.php');
             $_SESSION['account_id']=$user['account_id'];
             $_SESSION['user_first_name']= $user['first_name'];
             $_SESSION['user_surname']=$user['surname'];
-            header("Location: Home.php");
+            header("Location: pages-system/Home.php");
             die();
 
           }else{
