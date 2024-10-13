@@ -6,7 +6,7 @@
   <script src="js/script.js" defer></script>
   <?php require ("config.php");?>
   <div class="topic-heading">
-    <img src="images/TradePoint.png" alt="Trade Point" width="300px" height="75px" />
+    <a href="CoverPage.php"><img src="images/TradePoint.png" alt="Trade Point" width="300px" height="75px"/></a>
     <h4>All of your jobs in one platform</h4>
   </div>
   <nav class="navbar">
