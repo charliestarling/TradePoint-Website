@@ -26,7 +26,7 @@ require('includes/header.php');
             $_SESSION['account_id']=$user['account_id'];
             $_SESSION['user_first_name']= $user['first_name'];
             $_SESSION['user_surname']=$user['surname'];
-            header("Location: pages-system/Home.php");
+            header("Location: /Applications/XAMPP/xamppfiles/htdocs/TradePoint-Website/pages-system/Home.php");
             die();
 
           }else{
