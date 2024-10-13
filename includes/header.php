@@ -6,8 +6,9 @@
   <script src="js/script.js" defer></script>
   <?php require ("config.php");?>
   <div class="topic-heading">
-      <h1>Trade Point</h1>
-      <h4>All of your jobs in one platform</h4>
+    <img src="images/TradePoint.png" alt="Trade Point" />
+    <h1>Trade Point</h1>
+    <h4>All of your jobs in one platform</h4>
   </div>
   <nav class="navbar">
     <ul>
