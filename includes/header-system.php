@@ -5,6 +5,4 @@
     <title><?php echo $title; ?></title>  
     <script src="js/script.js" defer></script>
     <?php require ("config.php");?>
-    <div class="topic-heading">
-    </div>
 </head>

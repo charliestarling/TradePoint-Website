@@ -4,7 +4,7 @@ if (!isset($_SESSION["account_id"])){
   header("Location: CoverPage.php");
 }
 $title = "TradePoint :: Home";
-require('includes/header-system.php');
+require_once('includes/header-system.php');
 ?>
 
 <!DOCTYPE html>
@@ -14,7 +14,7 @@ require('includes/header-system.php');
 <div class="topic-heading">
   <h1><?php echo $_SESSION['user_first_name']?>'s Dashboard</h1>
 </div>
-<?php include('includes/nav-system.php');?>
+<?php require_once('includes/nav-system.php');?>
 </head>
 
 <body>
