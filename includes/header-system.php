@@ -6,6 +6,5 @@
     <script src="js/script.js" defer></script>
     <?php require ("config.php");?>
     <div class="topic-heading">
-        <h1><?php echo $heading; ?></h1>
     </div>
 </head>

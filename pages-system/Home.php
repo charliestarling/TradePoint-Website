@@ -14,7 +14,7 @@ require('includes/header-system.php');
 <div class="topic-heading">
   <h1><?php echo $_SESSION['user_first_name']?>'s Dashboard</h1>
 </div>
-<?php require('includes/nav-system.php');?>
+<?php include('includes/nav-system.php');?>
 </head>
 
 <body>
