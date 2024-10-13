@@ -1,14 +1,71 @@
-/* Desktop Styles for Registration Form */
+/* Body Styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
-    height: 100vh;
+    height: 110vh;
     background: linear-gradient(to bottom, #78866B 30%, #FAF8F3 30%);
 }
 
-/* Container for the Form */
+/* Topic Heading */
+.topic-heading {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.topic-heading h1 {
+    margin-top: 40px;
+    font-size: 50px;
+    color: #FAF8F3;
+    text-shadow: 2px 2px 0 #3B3A36;
+}
+
+.topic-heading h4 {
+    margin-top: -25px;
+    font-size: 20px;
+    color: #FAF8F3;
+    text-shadow: 2px 2px 0 #3B3A36;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #3B3A36;
+    padding: 25px 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.navbar ul li:last-child {
+    margin-right: 0;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #FAF8F3;
+    padding: 10px 20px;
+    background-color: #78866B;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.navbar ul li a:hover {
+    background-color: #C8B9A6;
+    color: white;
+}
+
+/* Form Container */
 .login-container {
     max-width: 400px;
     margin: 50px auto;
@@ -22,11 +79,11 @@ body {
 /* Heading Style */
 h1 {
     text-align: center;
-    color: #3B3A36; /* Soft Blue for headings */
+    color: #3B3A36;
     font-size: 28px;
 }
 
-/* Form Styles */
+/* Form Input Styles */
 form {
     display: flex;
     flex-direction: column;
@@ -38,18 +95,19 @@ input[type="text"], input[type="email"], input[type="password"] {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
-    background-color: #FAF8F3; /* Light Yellow input background */
+    background-color: #FAF8F3;
     width: 100%;
 }
 
 input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
     outline: none;
-    border-color: #74B9FF; /* Soft Blue focus on input fields */
+    border-color: #74B9FF;
 }
 
+/* Submit Button */
 input[type="submit"] {
     padding: 12px;
-    background-color: #C8B9A6; /* Light Mint Button */
+    background-color: #C8B9A6;
     color: white;
     border: none;
     border-radius: 5px;
@@ -58,10 +116,10 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #78866B; /* Darker Mint on hover */
+    background-color: #78866B;
 }
 
-/* Styled Confirmation Message */
+/* Confirmation Message */
 #confirm_message {
     font-size: 16px;
     padding: 12px;
@@ -72,46 +130,29 @@ input[type="submit"]:hover {
 
 #confirm_message.match {
     color: white;
-    background-color: #919F84; /* Light Mint for success */
+    background-color: #919F84;
     display: block;
 }
 
 #confirm_message.no-match {
     color: white;
-    background-color: #FF7675; /* Peachy Pink for error */
+    background-color: #FF7675;
     display: block;
 }
 
-/* Error Message Styles */
+/* Error Message */
 .error_message {
-    color: #FF7675; /* Peachy Pink for error messages */
+    color: #FF7675;
     font-size: 16px;
     margin-bottom: 10px;
 }
 
 /* Link Styles */
 p a {
-    color: #74B9FF; /* Soft Blue for links */
+    color: #74B9FF;
     text-decoration: none;
 }
 
 p a:hover {
     text-decoration: underline;
-}
-
-/* Topical Heading */
-.topic-heading h1{
-    margin-top: 40px;
-    font-size:50px;
-    color: #FAF8F3;
-    text-shadow: 2px 2px 0 #3B3A36, 2px 2px 0 #3B3A36, 2px 2px 0 #3B3A36, 2px 2px 0 #3B3A36;
-}  
-.topic-heading h4{
-    text-align: center;
-    margin-top: -25px;
-    font-size:20px;
-    color: #FAF8F3;
-    text-shadow: 2px 2px 0 #3B3A36, 2px 2px 0 #3B3A36, 2px 2px 0 #3B3A36, 2px 2px 0 #3B3A36;
-    
-    
 }

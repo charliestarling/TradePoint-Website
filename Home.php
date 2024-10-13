@@ -1,22 +1,23 @@
 <?php 
 session_start();
 if (!isset($_SESSION["account_id"])){
-  header("Location: coverPage.php");
+  header("Location: CoverPage.php");
 }
 $title = "TradePoint :: Home";
-require('includes/header.php');
+require('includes/header-system.php');
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <p><a href="Logout.php">Log out</a></p>
+<div class="topic-heading">
+  <h1><?php echo $_SESSION['user_first_name']?>'s Dashboard</h1>
+</div>
 </head>
+
 <body>
-    
+  <a href="Logout.php">Sign Out</a>
 </body>
 </html>
 

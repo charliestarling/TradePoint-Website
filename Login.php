@@ -24,6 +24,8 @@ require('includes/header.php');
           if(password_verify($password, $user["password"])){
             session_start();
             $_SESSION['account_id']=$user['account_id'];
+            $_SESSION['user_first_name']= $user['first_name'];
+            $_SESSION['user_surname']=$user['surname'];
             header("Location: Home.php");
             die();
 

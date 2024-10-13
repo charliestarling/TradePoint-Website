@@ -1,5 +1,5 @@
 <?php 
-$title = "TradePoint :: Home";
+$title = "TradePoint :: About Us";
 require('includes/header.php');
 ?>
 
